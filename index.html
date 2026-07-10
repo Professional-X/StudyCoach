@@ -155,6 +155,9 @@
         .privacy-item .icon { font-size: 1.8rem; margin-bottom: 8px; }
         .privacy-item p { font-size: 0.85rem; color: #94a3b8; margin: 0; }
 
+        .ad-slot { text-align: center; margin: 28px 0; min-height: 50px; }
+        .ad-inline { display: flex; justify-content: center; margin: 28px 0; gap: 20px; flex-wrap: wrap; }
+        .ad-sidebar { display: flex; justify-content: center; gap: 12px; margin: 28px 0; }
         .footer { text-align: center; padding: 40px 0 20px; border-top: 1px solid #1e293b; margin-top: 60px; font-size: 0.85rem; color: #475569; }
         .footer a { color: #fbbf24; }
 
@@ -163,6 +166,8 @@
             .features-grid { grid-template-columns: 1fr; }
             .privacy-grid { grid-template-columns: repeat(2, 1fr); }
             .cta-row { flex-direction: column; align-items: center; }
+            .ad-inline { flex-direction: column; align-items: center; }
+            .ad-sidebar { flex-direction: column; align-items: center; }
         }
     </style>
 </head>
@@ -189,6 +194,23 @@
             </div>
         </div>
 
+        <!-- 728x90 Leaderboard -->
+        <div class="ad-slot">
+            <script type="text/javascript">
+                atOptions = { 'key' : '8ab5d527a6212394e4ba86fc60b609d5', 'format' : 'iframe', 'height' : 90, 'width' : 728, 'params' : {} };
+            </script>
+            <script type="text/javascript" src="https://www.highperformanceformat.com/8ab5d527a6212394e4ba86fc60b609d5/invoke.js"></script>
+        </div>
+
+        <!-- 320x50 Mobile Banner -->
+        <div class="ad-slot" style="display:none;" id="ad-mobile-320x50">
+            <script type="text/javascript">
+                atOptions = { 'key' : '15f9ede9bc5b7c7dc80c8ab77172b77c', 'format' : 'iframe', 'height' : 50, 'width' : 320, 'params' : {} };
+            </script>
+            <script type="text/javascript" src="https://www.highperformanceformat.com/15f9ede9bc5b7c7dc80c8ab77172b77c/invoke.js"></script>
+        </div>
+        <script>if(window.innerWidth<=700)document.getElementById('ad-mobile-320x50').style.display='block';</script>
+
         <div class="section">
             <h2>What is StudyCoach?</h2>
             <p>
@@ -201,6 +223,14 @@
                 Unlike other study apps, StudyCoach requires <strong>no account, stores all data locally</strong>
                 in your browser, and works completely <strong>offline</strong>. Your study data never leaves your device.
             </p>
+
+            <!-- 300x250 Inline -->
+            <div class="ad-slot">
+                <script type="text/javascript">
+                    atOptions = { 'key' : '20168b17bce4f777482b4084c724b9be', 'format' : 'iframe', 'height' : 250, 'width' : 300, 'params' : {} };
+                </script>
+                <script type="text/javascript" src="https://www.highperformanceformat.com/20168b17bce4f777482b4084c724b9be/invoke.js"></script>
+            </div>
         </div>
 
         <div class="section">
@@ -241,6 +271,14 @@
             </div>
         </div>
 
+        <!-- 468x60 Banner -->
+        <div class="ad-slot">
+            <script type="text/javascript">
+                atOptions = { 'key' : '065aaada143553a6c00e55114949a420', 'format' : 'iframe', 'height' : 60, 'width' : 468, 'params' : {} };
+            </script>
+            <script type="text/javascript" src="https://www.highperformanceformat.com/065aaada143553a6c00e55114949a420/invoke.js"></script>
+        </div>
+
         <div class="section">
             <h2>Why StudyCoach Over Other Study Apps?</h2>
             <table class="compare-table">
@@ -253,6 +291,22 @@
                 <tr><td>Open source</td><td><span class="check">Yes</span></td><td><span class="cross">Rarely</span></td></tr>
                 <tr><td>Free forever</td><td><span class="check">Yes</span></td><td>Often limited</td></tr>
             </table>
+        </div>
+
+        <!-- 160x300 + 160x600 Side by side -->
+        <div class="ad-sidebar">
+            <div>
+                <script type="text/javascript">
+                    atOptions = { 'key' : 'bbc019e82bd08d23dfc0a029df1a850d', 'format' : 'iframe', 'height' : 300, 'width' : 160, 'params' : {} };
+                </script>
+                <script type="text/javascript" src="https://www.highperformanceformat.com/bbc019e82bd08d23dfc0a029df1a850d/invoke.js"></script>
+            </div>
+            <div>
+                <script type="text/javascript">
+                    atOptions = { 'key' : 'd5a85df98f3ed1635c8ba3b6d090f827', 'format' : 'iframe', 'height' : 600, 'width' : 160, 'params' : {} };
+                </script>
+                <script type="text/javascript" src="https://www.highperformanceformat.com/d5a85df98f3ed1635c8ba3b6d090f827/invoke.js"></script>
+            </div>
         </div>
 
         <div class="section">
@@ -312,8 +366,19 @@
             </div>
         </div>
 
+        <!-- Native Banner -->
+        <div class="ad-slot">
+            <script async="async" data-cfasync="false" src="https://pl30213695.effectivecpmnetwork.com/8d9109ce14a2e81e03455f2957e0c16a/invoke.js"></script>
+            <div id="container-8d9109ce14a2e81e03455f2957e0c16a"></div>
+        </div>
+
         <div class="section" style="text-align:center; padding: 30px 0;">
             <a href="https://studycoachai.space-z.ai/" class="cta-primary">Start Studying Smarter — Try StudyCoach Free</a>
+        </div>
+
+        <!-- Social Bar -->
+        <div class="ad-slot">
+            <script src="https://pl30213696.effectivecpmnetwork.com/fc/6f/bd/fc6fbd0208e43aaa58bfa45f723bc3a0.js"></script>
         </div>
 
         <div class="footer">
